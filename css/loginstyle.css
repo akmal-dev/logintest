@@ -310,7 +310,8 @@ input{
     /*effects and interactions css*/
     .main-container .login-wrapper .left-container .header .arrow:hover{
         background-color:#673ab7 ;
-        color:var(--color-fonts);
+        color:#FFF;
+	font-size: 3vw;
         border-radius:2rem;
         padding:2px;
         box-shadow: 0 5px 10px #3B4242;
