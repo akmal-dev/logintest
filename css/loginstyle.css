@@ -4,7 +4,9 @@
 :root{
   --color-fonts:#454545;  
 }
-
+body {
+  background-color: #f9fbfd;
+}
 *{
   box-sizing:border-box;
 }
@@ -28,7 +30,7 @@ input{
     align-items:center;
     justify-content:center;
     min-height:100vh;
-    background-color: #f9fbfd;
+    
     font-family: "Montserrat", sans-serif;  
 }
 
@@ -48,16 +50,15 @@ input{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding: 8% 5% 10% 5%;
+  padding: 5% 5% 10% 5%;
 }
 .main-container .login-wrapper .left-container .header .register{
   color:var(--color-fonts);
   font-size:1vw;
-  font-weight:600;
+  font-weight:bold;
+  text-decoration: underline;
 }
-.main-container .login-wrapper .left-container .header .register:hover{
-  background: #673ab7;
-}
+
 .main-container .login-wrapper .left-container .header .arrow{
     font-size:1.8vw;
     color: #222222;
@@ -285,11 +286,19 @@ input{
 
 
 @media only screen and (max-width: 768px) {
+
+    
     .main-container .login-wrapper{
         display:flex; 
         flex-direction:column-reverse;
         width:100%;
         margin:0% 0%;
+    }
+    .main-container .login-wrapper .left-container .header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding: 5% 5% 0% 5%;
     }
 
     .main-container .login-wrapper .left-container .header .register{
@@ -299,12 +308,16 @@ input{
         font-size:5vw;
     }  
     /*effects and interactions css*/
-    .main-container .login-wrapper .left-container .header .register:active, .arrow:active{
-        background-color:#FAFAF5 ;
+    .main-container .login-wrapper .left-container .header .arrow:hover{
+        background-color:#673ab7 ;
         color:var(--color-fonts);
         border-radius:2rem;
         padding:2px;
         box-shadow: 0 5px 10px #3B4242;
+    }
+    .main-container .login-wrapper .left-container .header .arrow:active{
+        background-color:#673ab7 ;
+        
     }
     .main-container .login-wrapper .left-container .main h2{
         font-size:5vw;
@@ -323,6 +336,8 @@ input{
     .main-container .login-wrapper .left-container .main .login-now a{
         font-size:3vw;
         font-weight:700;
+      padding:6.5% 0%;
+
     }
     .main-container .login-wrapper .left-container .footer .social-media h3{
         font-size:3.5vw;
@@ -334,7 +349,7 @@ input{
         display:flex;
         justify-content:center;
         align-items:center;
-        min-height:30vh;
+        max-height:30vh;
     }
     .main-container .side-container .short-line{
         display:none; 
@@ -349,12 +364,21 @@ input{
         justify-content:center;
         align-items:center;
         text-align:center;  
-        padding-bottom:5%;
+        padding: 5%;
     }
     .main-container .login-wrapper .left-container .main .forminput input{
       font-size: 3.5vw;
     }
-    }
+    .main-container .side-container  .side-text-container .text h3{
+            font-size:0.85rem;
+            padding: 0%;
+        }
+    .main-container .side-container  .side-text-container .text p{
+            font-size:0.65rem;
+            margin-top: 0;
+            line-height: 1rem;
+        }
+  }
 
      @media only screen and (min-width:481px)and (max-width: 768px){ 
       .main-container .login-wrapper .left-container .main p{
@@ -363,14 +387,14 @@ input{
 }	
     @media only screen and (min-width: 1024px){
         /*effects and interactions css*/
-    .main-container .login-wrapper .left-container .header .register:hover, .arrow:hover{
+    .main-container .login-wrapper .left-container .header .arrow:hover{
         background-color:#673ab7;
         box-shadow: 0 5px 10px #3B4242;
         border-radius:2rem;
         padding:4px;
         color:#F7F5F5;
     }
-    .main-container .login-wrapper .left-container .header .register:active, .arrow:active{
+    .main-container .login-wrapper .left-container .header  .arrow:active{
         background-color:#FAFAF5 ;
         color:var(--color-fonts);
         border-radius:2rem;
